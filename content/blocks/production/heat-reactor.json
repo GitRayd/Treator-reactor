@@ -1,0 +1,53 @@
+{
+  "type": "HeatProducer",
+  "name": "Heat Reactar",
+  "description": "Produces fissile matter by emitting heat.",
+  "category": "crafting",
+  "size": 3,
+  "itemCapacity": "20"
+  "craftEffect": {
+  "type": "heatReactorSmoke",
+  "length": 8,
+  "amount": 4,
+  "rotationSpacing": 90
+  }
+  "rotateDraw": false,
+  "research": "carbide-crucible",
+  "requirements": [
+    "graphite/20",
+    "thorium/80",
+    "oxide/70",
+    "carbide/10"
+  ],
+  "outputItem": "fissile-matter/1",
+  "researchCostMultiplier": 1.1,
+  "consumes": {
+    "liquid": "nitrogen/0.016",
+    "items": {
+      "items": [
+        "thorium/3"
+      ]
+    }
+  },
+  "craftTime": 600,
+  "regionRotated1": 2,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+      "type": "DrawGlowRegion",
+      "suffix": "-glow",
+      "color": "ff565c"
+       }
+       {
+       "type": "DrawDefault"
+       }
+       {
+       "type": "DrawHeatOutput"
+       }
+   ]
+   }
+  "ambientSound": "none",
+  "liquidCapacity": 10,
+  "heatOutput": 10
+}

@@ -1,0 +1,47 @@
+{
+  "type": "HeatCrafter",
+  //todo: other name, this one sucks
+  "name": "Uranium Rod Factory",
+  "description": "Produces uranium rods in four steps: enriching uranium, pressing graphite into pellets, creating a base for the rod and assembling it.",
+  "category": "crafting",
+  "requirements": [
+    {"item": "carbide", "amount": 120},
+    {"item": "silicon", "amount": 160},
+    {"item": "thorium", "amount": 120},
+    {"item": "tungsten", "amount": 280}
+  ],
+  "size": 5,
+  "itemCapacity": 40,
+  "heatRequirement": 80,
+  "craftTime": 120,
+  "liquidCapacity": 500,
+  "research": "",
+  "ambientSound": "none",
+  "outputItem": {
+    "item": "surge-uranium-rod",
+    "amount": 1
+  },
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+       }
+    ]
+  },
+  "consumes": {
+    "power": 12.5,
+    "items": {
+      "items": [
+        {"item": "tungsten", "amount": 1},
+        {"item": "surge-alloy", "amount": 2},
+        {"item": "fissile-matter", "amount": 10},
+        {"item": "uranium", "amount": 2},
+        {"item": "graphite", "amount":  16}
+      ]
+    },
+    "liquid": {
+      "liquid": "hydrogen",
+      "amount": 0.1
+    }
+  }
+}
