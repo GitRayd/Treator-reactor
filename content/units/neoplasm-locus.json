@@ -1,0 +1,70 @@
+{
+"type": "tank",
+"name": "Neoplasm locus",
+"description": "Locus, but neoplasm!",
+"hitSize": 18,
+"treadPullOffset": 5,
+"health": 2300,
+"rotateSpeed": 2.2,
+"armor": 9,
+"flying": false,
+"TargetAir": true,
+"speed": 0.85,
+"range": 20,
+"treadRects": [
+    {
+      "x": 13,
+      "y": -38,
+      "width": 17,
+      "height": 76
+    }
+  ],
+  "abilities": [
+  {
+  "type": "RegenAbility",
+  "percentAmount": 0.0235
+  }
+  {
+  "type": "LiquidExplodeAbility",
+  "liquid": "neoplasm"
+  }
+  {
+  "type": "LiquidRegenAbility",
+  "liquid": "neoplasm",
+  "slurpEffect": "neoplasmHeal"
+  }
+ ],
+  "singleTarget": false,
+  "omniMovement": false,
+  "faceTarget": false,
+"weapons": [
+   {
+      "x": 0,
+      "y": 0,
+      "name": "neo-locus-canon",
+      "mirror": false,
+      "shootSound": "bolt",
+      "layerOffset": 0.0001,
+      "heatColor": "bf4a32ff",
+      "rotate": true,
+      "rotateSpeed": 1.5,
+      "reload": 18,
+      "recoil": 1,
+      "cooldownTime": 30,
+      "bullet": {
+        "width": 5,
+        "damage": 40,
+        "laserAbsorb": false,
+        "length": 160,
+        "type": "RailBulletType",
+        "pierceBuilding": true,
+        "buildingDamageMultiplier": 1.9,
+        "lifetime": 30,
+        "hitColor": "bf3632ff",
+        "hitEffect": "hitBulletColor",
+        "smokeEffect": "colorSpark",
+        "shootEffect": "lightningCharge",
+        }
+      }
+    ]
+}
