@@ -1,0 +1,19 @@
+{
+  "name": "Uranium",
+  "description": "Very rare ore. Needed as fuel and for production of other materials ",
+  "details": "Perhaps before the beginning of civilization there was the first thorium, which then oxidized",
+  "cost": 2.5,
+  "color": "7a89bc",
+  "flammability": 0.2,
+  "explosiveness": 0.2,
+  "radioactivity": 1.5,
+  "research": {
+    "parent": "fissile-matter",
+    "requirements": [
+      {
+        "item": "fissile-matter",
+        "amount": 100
+      }
+    ]
+  }
+}
